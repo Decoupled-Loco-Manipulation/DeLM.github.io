@@ -46,27 +46,39 @@
 </head>
 <body>
 
-
+<!-- authors -->
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">Learning Decoupled Training Methods for High Inertia Wheel-legged Robot to Move and Grasp</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Shiyu Zhu</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
+                <a  target="_blank">Shiyu Zhu</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Rankun Li</a><sup>3</sup>,</span>
+              <span class="author-block">
+                <a  target="_blank">Qi Li</a><sup>2,</sup></span>
+              <span class="author-block">
+                <a  target="_blank">Zhuo Han</a><sup>3,</sup></span>
+              <span class="author-block">
+                <a  target="_blank">Zhengde Ma</a><sup>2,</sup></span>
+              <span class="author-block">
+                <a  target="_blank">Hao Wang</a><sup>2,</sup></span>
+              <span class="author-block">
+                <a  target="_blank">Wenlong Liao</a><sup>2,</sup></span>
+              <span class="author-block">
+                <a  target="_blank">Wende Xie</a><sup>2,</sup></span>
+              <span class="author-block">
+                <a  target="_blank">Shenglan Liu</a><sup>1</sup></span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block"><sup>1</sup>Dalian University of Technology,</span>
+                    <span class="author-block"><sup>2</sup>Cowarobot Investment Holding Limited,</span>
+                    <span class="author-block"><sup>3</sup>Shanghai University</span>
                   </div>
 
                   <div class="column has-text-centered">
@@ -82,7 +94,7 @@
                       </a>
                     </span>
 
-                    <!-- Supplementary PDF link -->
+                    <!-- Supplementary PDF link
                     <span class="link-block">
                       <a href="static/pdfs/supplementary_material.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
@@ -91,7 +103,7 @@
                       </span>
                       <span>Supplementary</span>
                     </a>
-                  </span>
+                  </span> -->
 
                   <!-- Github link -->
                   <span class="link-block">
@@ -100,7 +112,7 @@
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
-                    <span>Code</span>
+                    <span>Code Coming soon...</span>
                   </a>
                 </span>
 
@@ -121,34 +133,20 @@
     </div>
   </div>
 </section>
+<!-- authors -->
 
 
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
 
 <!-- Paper abstract -->
-<section class="section hero is-light">
+<section class="section">
   <div class="container is-max-desktop">
+    <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Bipedal wheeled robots, with their excellent mobility and flexibility, demonstrate broad application prospects. However, current research on bipedal wheeled robots mainly focuses on small mobile platforms, whose endurance and dynamic performance still cannot meet the requirements of practical applications. For high-inertia bipedal wheeled robots that meet the requirements and are equipped with robotic arms, the autonomous grasping stability of the robotic arm also faces significant challenges. To address these issues, we propose a  local space-oriented  decoupled    high-inertia  bipedal wheeled robot training method - DeLM (  De  coupled  L  oco -  M  anipulation Methods), aiming to provide strong support for the body stability of this type of robot during grasping tasks. In this paper, we first introduce a randomization curriculum for the robotic arm to describe the impact of the real-world robotic arm on lower limb balance in different poses, which does not require additional consideration of robotic arm collision constraints; in addition, we only use a one-stage training paradigm to achieve a transparent learning process of the lower limbs for the upper limbs, enabling the lower limbs to actively infer the pose of the robotic arm and thus autonomously adjust the body pose to achieve stable balance; finally, we perform parametric modeling and randomization of the real robot motor in simulation, successfully achieving smooth grasping tasks on a 65kg bipedal wheeled robot, including picking up objects, grasping objects at high places, etc. The results show that the method we proposed in our bipedal wheeled robot grasping task  success rate  exceeds 95%, with the average shaking distance not exceeding 10cm, meeting the requirements of most applications. For specific details of the relevant demonstration, please refer to our project website:https://decoupled-loco-manipulation.github.io/DeLM.github.io/.
           </p>
         </div>
       </div>
@@ -158,120 +156,72 @@
 <!-- End paper abstract -->
 
 
-<!-- Image carousel -->
-<section class="hero is-small">
+
+<!-- Main Pipelines -->
+<section class="Pipelines"></section>
   <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-15 has-text-centered">
+        <img src="./static/images/pipelines.png"
+          class="interpolation-image"
+          alt="Interpolate start reference image."
+          style="display: block; margin: 0 auto; max-width: 60%; height: auto;"/>
+        <div class="content has-text-justified">
+          <p style="text-align: center; margin-left: 8%; margin-right: 8%;">
+            Fig. 1. Overview of DLM. In Arm Curriculumn in Circle 1 (blue area) we formulated a randomization course for robotic arms. This part of the robotic arms has no collision volume in the simulation. The grasping postures of different robotic arms are generated through various randomization methods. The difficulty gradually transitions from the simplest fixed starting posture to the most difficult random linear interpolation posture; in Arm Estimator in Circle 2 (green area) Arm Estimator, the above Arm Curriculumn is used to achieve different actions, and the two indicators of the end effector position of the robotic arm and the center of mass position of the robotic arm are used to better assist the lower limb balance; Circle 3 (grey area) is the Sim Train process of the overall solution. Historical observation information outputs the estimated value through historical MLP, and the robotic arm information in the privileged observation information (including the center of mass of the robotic arm and ee. Pos) and ontology information (base height and linear speed) are supervised and learned, and the motor parameters are restricted through the NP3O network, and the robot's balance is finally controlled; Circle 4 (white area) is the deployment process, and the upper limbs control the movement of the robotic arm through Diffusion Policy or remote operation, while the lower limbs use the above-mentioned training network for smooth control. During the deployment process, detailed calibrations such as motor properties, sensor delay and motor torque compensation are also required to reduce sim2real's gap.
+          </p>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End youtube video -->
+<!-- Main Pipelines -->
 
 
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
+
+<!-- Section videos -->
+<section class="section">
+  <div class="container">
+    <h2 class="title is-3" style="text-align: center;">Grasping Skills</h2>
+    <div class="columns is-centered">
+      <div class="column is-two-fifths is-centered has-text-centered">
+        <div><strong>Indoor Grasping</strong></div>
+        <video controls autoplay loop muted playsinline src="static/videos/Cowa_Grasp_1.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      </div>
+      <div class="column is-two-fifths is-centered has-text-centered">
+        <div><strong>Apple Grasping</strong></div>
+        <video controls autoplay loop muted playsinline src="static/videos/Cowa_Grasp_apples_2.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-two-fifths is-centered has-text-centered">
+        <div><strong>Outdoor Grasping 1</strong></div>
+        <video controls autoplay loop muted playsinline src="static/videos/Cowa_Grasp_Outdoors.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      </div>
+      <div class="column is-two-fifths is-centered has-text-centered">
+        <div><strong>Outdoor Grasping 2</strong></div>
+        <video controls autoplay loop muted playsinline src="static/videos/Cowa_Grasp_Outdoors2.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-two-fifths is-centered has-text-centered">
+        <div><strong>Heavy Object Swinging</strong></div>
+        <video controls autoplay loop muted playsinline src="static/videos/Cowa_Heavy_Swinging.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      </div>
+      <div class="column is-two-fifths is-centered has-text-centered">
+        <div><strong>Muddy Road Grasping</strong></div>
+        <video controls autoplay loop muted playsinline src="static/videos/Cowa_Muddy_Roads.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
       </div>
     </div>
   </div>
 </section>
-<!-- End video carousel -->
+<!-- Section videos -->
 
 
 
 
 
 
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
 
 
 <!--BibTex citation -->
@@ -282,6 +232,7 @@
     </div>
 </section>
 <!--End BibTex citation -->
+
 
 
   <footer class="footer">
