@@ -55,6 +55,11 @@ body {
     font-family: 'Google Sans', sans-serif;
 }
 
+.publication-authors .author-name {
+    color: #363636;
+    font-weight: 700;
+}
+
 .publication-venue {
     color: #555;
     width: fit-content;
@@ -132,6 +137,5 @@ body {
 .eql-cntrb { 
   font-size: smaller;
 }
-
 
 

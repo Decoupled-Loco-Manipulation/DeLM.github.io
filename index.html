@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Learning Decoupled Training Methods for High Inertia Wheel-legged Robot to Move and Grasp</title>
+  <title>DeLM: A Decoupled Training Framework for Wheel-Legged Bipedal Robots to Perform Loco-Manipulation Tasks Stably</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -52,38 +52,40 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Learning Decoupled Training Methods for High Inertia Wheel-legged Robot to Move and Grasp</h1>
+            <h1 class="title is-1 publication-title">DeLM: A Decoupled Training Framework for Wheel-Legged Bipedal Robots to Perform Loco-Manipulation Tasks Stably</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a  target="_blank">Shiyu Zhu</a><sup>1</sup>,</span>
+                <span class="author-name">Shiyu Zhu</span><sup>1,2</sup>,</span>
               <span class="author-block">
-                <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Rankun Li</a><sup>3</sup>,</span>
+                <span class="author-name">Rankun Li</span><sup>2,3</sup>,</span>
               <span class="author-block">
-                <a  target="_blank">Qi Li</a><sup>2,</sup></span>
+                <span class="author-name">Qi Li</span><sup>2</sup>,</span>
               <span class="author-block">
-                <a  target="_blank">Zhuo Han</a><sup>3,</sup></span>
+                <span class="author-name">Luhao Xu</span><sup>1,2</sup>,</span>
               <span class="author-block">
-                <a  target="_blank">Zhengde Ma</a><sup>2,</sup></span>
+                <span class="author-name">Guangsheng Li</span><sup>1</sup>,</span>
               <span class="author-block">
-                <a  target="_blank">Hao Wang</a><sup>2,</sup></span>
+                <span class="author-name">Hao Wang</span><sup>2</sup>,</span>
               <span class="author-block">
-                <a  target="_blank">Wenlong Liao</a><sup>2,</sup></span>
+                <span class="author-name">Zhengde Ma</span><sup>2</sup>,</span>
               <span class="author-block">
-                <a  target="_blank">Wende Xie</a><sup>2,</sup></span>
+                <span class="author-name">Shenglan Liu</span><sup>1</sup>,</span>
               <span class="author-block">
-                <a  target="_blank">Shenglan Liu</a><sup>1</sup></span>
-                  </div>
+                <span class="author-name">Wende Xie</span><sup>2</sup>,</span>
+              <span class="author-block">
+                <span class="author-name">Wenlong Liao</span><sup>2</sup></span>
+            </div>
 
                   <div class="is-size-5 publication-authors">
                     <span class="author-block"><sup>1</sup>Dalian University of Technology,</span>
-                    <span class="author-block"><sup>2</sup>Cowarobot Investment Holding Limited,</span>
+                    <span class="author-block"><sup>2</sup>COWARobot Co. Ltd.,</span>
                     <span class="author-block"><sup>3</sup>Shanghai University</span>
                   </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
-                         <!-- Arxiv PDF link -->
+                      <!-- Arxiv PDF link -->
                       <span class="link-block">
                         <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
@@ -106,7 +108,7 @@
                   </span> -->
 
                   <!-- Github link -->
-                  <span class="link-block">
+                  <!-- <span class="link-block">
                     <a href="https://github.com/YOUR REPO HERE" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
@@ -114,7 +116,7 @@
                     </span>
                     <span>Code Coming soon...</span>
                   </a>
-                </span>
+                </span> -->
 
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
@@ -137,6 +139,8 @@
 
 
 
+
+
 <!-- Paper abstract -->
 <section class="section">
   <div class="container is-max-desktop">
@@ -146,7 +150,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Bipedal wheeled robots, with their excellent mobility and flexibility, demonstrate broad application prospects. However, current research on bipedal wheeled robots mainly focuses on small mobile platforms, whose endurance and dynamic performance still cannot meet the requirements of practical applications. For high-inertia bipedal wheeled robots that meet the requirements and are equipped with robotic arms, the autonomous grasping stability of the robotic arm also faces significant challenges. To address these issues, we propose a  local space-oriented  decoupled    high-inertia  bipedal wheeled robot training method - DeLM (  De  coupled  L  oco -  M  anipulation Methods), aiming to provide strong support for the body stability of this type of robot during grasping tasks. In this paper, we first introduce a randomization curriculum for the robotic arm to describe the impact of the real-world robotic arm on lower limb balance in different poses, which does not require additional consideration of robotic arm collision constraints; in addition, we only use a one-stage training paradigm to achieve a transparent learning process of the lower limbs for the upper limbs, enabling the lower limbs to actively infer the pose of the robotic arm and thus autonomously adjust the body pose to achieve stable balance; finally, we perform parametric modeling and randomization of the real robot motor in simulation, successfully achieving smooth grasping tasks on a 65kg bipedal wheeled robot, including picking up objects, grasping objects at high places, etc. The results show that the method we proposed in our bipedal wheeled robot grasping task  success rate  exceeds 95%, with the average shaking distance not exceeding 10cm, meeting the requirements of most applications. For specific details of the relevant demonstration, please refer to our project website:https://decoupled-loco-manipulation.github.io/DeLM.github.io/.
+            Integrating a manipulator can substantially enhance the task efficiency of wheel-legged bipedal robots. However, manipulator motions introduce time-varying disturbances that make mobile-base stability difficult to maintain. In this paper, we propose a learning-based <strong>Decoupled Loco-Manipulation (DeLM)</strong> training framework for wheel-legged bipedal robots to solve the issues. First, we present the <strong>Arm Randomization Curriculum (ARC)</strong>, an easy-to-implement arm-motion generator that synthesizes diverse arm motions to inject realistic, time-varying manipulation disturbances into simulation, alleviating the lack of disturbance excitation during training. Second, we propose an <strong>Arm-Aware State Estimator (AASE)</strong> for locomotion that integrates latent arm representations to better compensate for these time-varying disturbances, improving both stability and robustness. Our experiments demonstrate over a 40% improvement in stability compared with a whole-body control baseline in simulation, and achieve a success rate above 80% in real-world experiments. Within DeLM, the robot serves as a stable and robust command-tracking mobile base that supports diverse, precise manipulation tasks, thereby opening up new possibilities for wheel-legged bipedal robots to perform loco-manipulation reliably.
           </p>
         </div>
       </div>
@@ -158,17 +162,20 @@
 
 
 <!-- Main Pipelines -->
-<section class="Pipelines"></section>
-  <div class="hero-body">
+<section class="section">
+  <div class="container">
     <div class="columns is-centered has-text-centered">
-      <div class="column is-15 has-text-centered">
-        <img src="./static/images/pipelines.png"
+      <div class="column is-four-fifths has-text-centered">
+        <img src="./static/images/pipelines_2.png"
           class="interpolation-image"
-          alt="Interpolate start reference image."
-          style="display: block; margin: 0 auto; max-width: 60%; height: auto;"/>
+          alt="Overview of the DeLM framework."
+          style="display: block; margin: 0 auto; max-width: 80%; height: auto;"/>
         <div class="content has-text-justified">
           <p style="text-align: center; margin-left: 8%; margin-right: 8%;">
-            Fig. 1. Overview of DLM. In Arm Curriculumn in Circle 1 (blue area) we formulated a randomization course for robotic arms. This part of the robotic arms has no collision volume in the simulation. The grasping postures of different robotic arms are generated through various randomization methods. The difficulty gradually transitions from the simplest fixed starting posture to the most difficult random linear interpolation posture; in Arm Estimator in Circle 2 (green area) Arm Estimator, the above Arm Curriculumn is used to achieve different actions, and the two indicators of the end effector position of the robotic arm and the center of mass position of the robotic arm are used to better assist the lower limb balance; Circle 3 (grey area) is the Sim Train process of the overall solution. Historical observation information outputs the estimated value through historical MLP, and the robotic arm information in the privileged observation information (including the center of mass of the robotic arm and ee. Pos) and ontology information (base height and linear speed) are supervised and learned, and the motor parameters are restricted through the NP3O network, and the robot's balance is finally controlled; Circle 4 (white area) is the deployment process, and the upper limbs control the movement of the robotic arm through Diffusion Policy or remote operation, while the lower limbs use the above-mentioned training network for smooth control. During the deployment process, detailed calibrations such as motor properties, sensor delay and motor torque compensation are also required to reduce sim2real's gap.
+            <strong>Overview of the framework DeLM.</strong>
+            (<strong>a</strong>) We propose an arm randomization curriculum.
+            (<strong>b</strong>) During training, the manipulator moves to target positions according to the proposed randomization strategies.
+            (<strong>c</strong>) Overall RL training framework for lower platform locomotion tasks.
           </p>
         </div>
       </div>
@@ -178,6 +185,18 @@
 <!-- Main Pipelines -->
 
 
+<!-- Pipeline video -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <video controls playsinline src="static/videos/2026IROS_cowa.mp4" style="width: 120%; border: 1px solid #bbb; border-radius: 10px;"></video>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Pipeline video -->
 
 <!-- Section videos -->
 <section class="section">
